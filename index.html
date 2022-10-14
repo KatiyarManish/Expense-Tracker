@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>expense tracker</title>
+  </head>
+  <body>
+    <div class="heading"><h1>Expense Tracker</h1></div>
+    <div class="container">
+      <div class="balance">
+        <h1 class="bal">YOUR BALANCE</h1>
+        <h1 class="total-bal">$0.00</h1>
+      </div>
+      <div class="flex">
+        <div class="flex-left">
+          <h1>INCOME</h1>
+          <h1 class="income">+$0.00</h1>
+        </div>
+        <h1>|</h1>
+        <div class="flex-right">
+          <h1>EXPENSE</h1>
+          <h1 class="expense">-$0.00</h1>
+        </div>
+      </div>
+
+      <div class="items">
+        <h1>History</h1>
+
+        <div class="flex-items">
+          <ul class="list">
+            <!-- <li>Cash <span>$100</span><button class="delete-btn">x</button></li> -->
+          </ul>
+        </div>
+      </div>
+
+      <div class="new-text">
+        <h1>Add New Transaction</h1>
+        <hr />
+        <div class="new">
+          <h3>Enter Text</h3>
+          <input
+            class="text"
+            type="text"
+            value=""
+            placeholder="Enter text..."
+          />
+        </div>
+      </div>
+
+      <div class="new-amount">
+        <h1>Amount</h1>
+        <h1>(Negative=Expense & Positive=Income)</h1>
+        <input
+          class="amount"
+          type="number"
+          value=""
+          placeholder="Enter Amount..."
+        />
+      </div>
+      <button class="btn">Add Transaction</button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
